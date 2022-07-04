@@ -1,0 +1,22 @@
+/* Variáveis*/
+$orange: #ffa600;
+$grey: #f3f3f3;
+$white: #fff;
+$base-color: $orange;
+
+/* Mixin´s*/
+@mixin Transition {
+  -webkit-transition: all 0.5 ease-in-out;
+  -moz-transition: all 0.5 ease-in-out;
+  -transition: all 0.5 ease-in-out;
+}
+@mixin corners ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius:$radius;
+  -border-radius: $radius;
+  -khtml-border-radius: $radius;
+}
+
+body {
+  background: $base-color;
+}
